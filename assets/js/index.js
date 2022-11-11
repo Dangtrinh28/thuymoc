@@ -73,3 +73,30 @@
 
        
 })(jQuery);
+
+var btn = document.getElementById('btn');
+btn.addEventListener('click',function(e){
+    e.preventDefault()
+    var name = document.getElementById('name').value;
+    var number = document.getElementById('number').value;
+    var Email = document.getElementById('Email').value;
+    var quality = document.getElementById('quality').value;
+    var time = document.getElementById('time').value;
+    var date = document.getElementById('date').value;
+    var message = document.getElementById('message').value;
+
+    var body = `Tên khách hàng: ${name} <br> Số điện thoại: ${number} <br> Tên gmail của quý khách; ${Email} <br> Số lượng khách hàng: ${quality} <br> 
+    Thời gian đặt bàn: ${time} <br> Ngày đặt bàn: ${date} <br> Yêu cầu của khách hàng: $P{message}`
+    
+    Email.send({
+        Host : "smtp.gmail.com",
+        Username : "nguyencaodangtrinhtv3@gmail.com",
+        Password : "ofsxplcvqpsderxi",
+        To : 'nguyencaodangtrinhtv3@gmail.com',
+        From : "Email",
+        Subject : subject,
+        Body : body
+    }).then(
+      message => alert(message)
+    );
+})
