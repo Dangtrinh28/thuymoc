@@ -32,7 +32,7 @@
     <!-- link custom end-->
     <link rel="icon" type="image/x-icon"
         href="https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/301127842_1060078351356985_3224039168656005356_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=boITfAPyxDEAX8ESDnk&_nc_ht=scontent.fsgn2-4.fna&oh=00_AfCC23TquV2izwz9e55nnw0-pZBRnxj3js4zwfv7_lGcQQ&oe=63633C5B">
-    <title>Thủy Mộc Restaurnat</title>
+    <title>Thủy Mộc Restaurant</title>
 </head>
 
 <body>
@@ -57,7 +57,9 @@
                         <a href="./client.html" class="nav-item nav-link">Góc nhà hàng</a>
                         <a href="./contact.html" class="nav-item nav-link">Liên hệ</a>
                     </div>
-                    <a href="" class="btn btn-primary py-2 px-4 mx-4">Đặt bàn ngay</a>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        đặt bàn ngay
+                    </button>
                     <!-- button -->
                 </div>
             </nav>
@@ -217,6 +219,86 @@
         </a>
     </div>
 
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+
+                <!-- Modal Header -->
+                <div class="modal-header w-100">
+                    <h4 class="modal-title text-primary"> <span class="text-white">Thông tin</span> đặt bàn online</h4>
+                    <button type="button" class="btn-close btn-close-white btn-info" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row g-3">
+                            <div class="form-flotting text-white">
+                                <label for="name">Tên khách - Guest's name <span
+                                        style="color: var(--bs-danger);">*</span> </label>
+                                <input required type="text" class="form-control" id="name"
+                                    placeholder="Thủy Mộc Vengan">
+                            </div>
+
+
+                            <div class="form-flotting text-white">
+                                <label for="number">Số điện thoại - Contact number<span
+                                        style="color: var(--bs-danger);">*</span> </label>
+                                <input required type="number" class="form-control" id="number" placeholder="0937613031">
+                            </div>
+
+                            <div class="form-flotting text-white">
+                                <label for="Email">Email<span style="color: var(--bs-danger);">*</span> </label>
+                                <input required type="text" class="form-control" id="Email"
+                                    placeholder="thuymoc@gmail.com">
+                            </div>
+
+                            <div class="form-flotting text-white">
+                                <label for="quality">Số lượng khách - Number of guests<span
+                                        style="color: var(--bs-danger);">*</span> </label>
+                                <input required type="number" class="form-control" id="quality" placeholder="">
+                            </div>
+
+                            <div class="form-flotting text-white">
+                                <label for="time">Giờ đến - Expected arrival time<span
+                                        style="color: var(--bs-danger);">*</span>
+                                </label>
+                                <input required type="time" class="form-control" id="time"
+                                    placeholder="Vui lòng đặt bàn trước 1h">
+                            </div>
+
+                            <div class="form-flotting text-white">
+                                <label for="date">Ngày đặt bàn - Reserved date<span
+                                        style="color: var(--bs-danger);">*</span>
+                                </label>
+                                <input required type="date" class="form-control" id="date"
+                                    placeholder="Vui lòng đặt bàn trước 1h">
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea style="height: 100px;" name="" id="message" cols="30" rows="10"
+                                        class="form-control" placeholder=""></textarea>
+                                    <label for="message">Yêu cầu của quý khách - Special requests </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <button id="btn" class="btn btn-primary w-100 py-3" type="submit">
+                                    ĐẶT BÀN - RESERVE
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>

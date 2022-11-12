@@ -227,3 +227,9 @@
   float: left;
   display: block;
 }
+
+@media (max-width: 992px)  {
+  .navbar-dark .navbar-nav .nav-link {
+    margin: 0;
+  }
+}
