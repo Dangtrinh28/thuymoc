@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon link -->
+    <link rel="stylesheet" href="./assets/font/fontawesome/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- link lib -->
+    <link rel="stylesheet" href="./assets/lib/animate/animate.min.css">
+    <link rel="stylesheet" href="./assets/lib/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css">
+
+    <!-- link bootstraps custom  -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- link custom -->
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- link custom end-->
+    <link rel="icon" type="image/x-icon"
+        href="https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.30808-6/301127842_1060078351356985_3224039168656005356_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=boITfAPyxDEAX8ESDnk&_nc_ht=scontent.fsgn2-4.fna&oh=00_AfCC23TquV2izwz9e55nnw0-pZBRnxj3js4zwfv7_lGcQQ&oe=63633C5B">
+        <title>Thủy Mộc Restaurant</title>
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- navigation bar -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="./index.html" class="navbar-brand p-0">
+                    <img src="./assets/img/Logo/LOGO.png" class="" alt="" style="height: 80px;">
+                </a>
+
+                <!-- button for responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="./index.html" class="nav-item nav-link active">Trang chủ</a>
+                        <a href="./intro.html" class="nav-item nav-link">Về chúng tôi</a>
+                        <a href="./menu.html" class="nav-item nav-link">Thực đơn</a>
+                        <a href="./client.html" class="nav-item nav-link">Góc nhà hàng</a>
+                        <a href="./contact.html" class="nav-item nav-link">Liên hệ</a>
+                    </div>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        đặt bàn ngay
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <!-- intro section -->
+        <div class="container-xxl py-5 bg-dark hero-header mb-5">
+            <div class="container my-5 py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text--center text-lg-start">
+                        <h1 class="dislay-3 text-white animated slideInLeft">Ẩm thực chay <span class="text-primary">
+                                Thủy Mộc</span></h1>
+                        <p class="text-white animated slideInLeft mb-4 pb-2">
+                            Tự hào giới thiệu đến Quý khách những món dùng chế biến từ nguồn nguyên liệu tươi ngon, lành
+                            sạch, với cung cách phục vụ tận tâm chu đáo. Quý khách hoàn toàn yên tâm về chất lượng.
+                        </p>
+                        <button type="button" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft" data-bs-toggle="modal" data-bs-target="#myModal">
+                            Đặt bàn tại đây
+                        </button>
+                    </div>
+
+                    <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                        <img src="./assets/img/banner/banner1.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact section -->
+        <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 bg-dark d-flex align-items-center">
+                        <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                            <h1 class="text-light">
+                                Góp ý từ
+                                <span class="text-primary mb-4">khách hàng</span>
+                            </h1>
+
+                            <!-- form -->
+                            <form action="">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-flotting">
+                                            <label for="name">Tên khách - Guest's name <span
+                                                    style="color: var(--bs-danger);">*</span> </label>
+                                            <input required type="text" class="form-control" id="names"
+                                                placeholder="Họ và tên">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-flotting">
+                                            <label for="Email">Email<span style="color: var(--bs-danger);">*</span>
+                                            </label>
+                                            <input required type="text" class="form-control" id="email"
+                                                placeholder="thuymocvegetarian@gmail.com">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-flotting">
+                                            <label for="number">Số điện thoại - Your phone<span
+                                                    style="color: var(--bs-danger);">*</span> </label>
+                                            <input required type="number" class="form-control" id="numberPhone"
+                                                placeholder="0937613031">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-flotting">
+                                            <label for="number">Chủ đề - Topic<span
+                                                    style="color: var(--bs-danger);">*</span> </label>
+                                            <input type="text" class="form-control" id="topic"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea style="height: 100px;" name="" id="messages" cols="30" rows="10"
+                                                class="form-control" placeholder=""></textarea>
+                                            <label for="message">Lời nhắn của Quý khách - Your message </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3" type="button" onclick="sendEmail2()">
+                                            Gửi - Send
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 bg-dark d-flex align-items-center">
+                        <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                            <h1 class="text-light">
+                                Thông tin
+                                <span class="text-primary mb-4">liên hệ</span>
+                            </h1>
+                            <span class="text-light mb-4 d-block">Nếu bạn có bất kì thắc mắc nào, vui lòng liên hệ với
+                                chúng tôi với thông tin sau:</span>
+
+
+                            <a href="https://www.google.com/maps/dir//%E1%BA%A8m+th%E1%BB%B1c+Chay+Th%E1%BB%A7y+M%E1%BB%99c/data=!4m8!4m7!1m0!1m5!1m1!1s0x317529b96049ef13:0xbfe005dc03ad2f80!2m2!1d106.6812728!2d10.8275028"
+                                class="d-block text-title text-light mb-4">
+                                <i class="bi bi-geo-alt-fill me-2"></i>Địa chỉ: 39 Trần Thị Nghỉ, Cityland Center Hills,
+                                Gò Vấp, Thành phố Hồ Chí Minh
+                            </a>
+
+                            <a href="tel:0937613031" class="d-block mb-4 text-light text-title">
+                                <i class="bi bi-telephone me-2"></i> 0937613031
+                            </a>
+
+                            <a href="mailto:thuymocvegetarian@gmail.com" class="d-block mb-4 text-light text-title">
+                                <i class="bi bi-envelope me-2"></i>Email:
+                                thuymocvegetarian@gmail.com
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- map  -->
+        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="container">
+        <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.788051916945!2d106.67908061744384!3d10.827525599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529b96049ef13%3A0xbfe005dc03ad2f80!2z4bqobSB0aOG7sWMgQ2hheSBUaOG7p3kgTeG7mWM!5e0!3m2!1svi!2s!4v1667704928149!5m2!1svi!2s" style="border:0; height: 500px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+         </div>
+
+               <!-- footer -->
+               <div class="container-fluid bg-dark text-light footer pt-4 mt-4 wow fadeIn" data-wow-delay="0.1s">
+                <div class="container">
+                    <div class="row g-4 pb-4">
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-3">
+                                Địa chỉ nhà hàng
+                            </h4>
+
+                            <p class="mb-2">
+                                <i class="fa fa-map-marked-alt me-2"></i>
+                                <a href="https://www.google.com/maps/dir//%E1%BA%A8m+th%E1%BB%B1c+Chay+Th%E1%BB%A7y+M%E1%BB%99c/data=!4m8!4m7!1m0!1m5!1m1!1s0x317529b96049ef13:0xbfe005dc03ad2f80!2m2!1d106.6812728!2d10.8275028"
+                                    class="text-light">
+                                    39 Trần Thị Nghỉ, Cityland Center Hills, Gò Vấp, Thành phố Hồ Chí Minh
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-3">
+                                Thời gian mở cửa
+                            </h4>
+
+                            <p class="mb-2">
+                                <i class="bi bi-stopwatch me-2"></i>
+                                9 giờ - 15 giờ và 16 giờ đến 21 giờ hàng ngày.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-3">
+                                Thông tin liên lạc
+                            </h4>
+
+                            <p class="mb-2">
+                                <i class="fa fa-envelope me-2"></i>
+                                <a href="mailto:thuymocvegetarian@gmail.com" class="text-light">
+                                    thuymocvegetarian
+                                </a>
+                            </p>
+
+                            <p class="mb-2">
+                                <i class="fa fa-phone-alt me-2"></i>
+                                <a href="tel:093 761 30 31" class="text-light">093 761 30 31</a>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6">
+                            <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-3">
+                                Nhận thông báo
+                            </h4>
+
+                            <div class="col-md-12">
+                                <label for="reply">Nhận thông báo từ chúng tôi</label>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <form action="">
+                                            <div class="form-flotting mb-1">
+                                                <input type="email" required class="form-control" id="reply"
+                                                    placeholder="">
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <button class="btn btn-primary w-100" type="submit">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="container">
+                        <div class="copyright">
+                            <div class="row">
+                                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">@2022 Thủy Mộc | All rights
+                                    reserved.
+                                    <a href="https://linktr.ee/dtrinh28" class="border-bottom">Design and developer by
+                                        Dang
+                                        Trinh</a>
+                                </div>
+
+                                <div class="col-md-6 text-center text-md-end">
+                                    <div class="footer-menu">
+                                        <a href="">Home</a>
+                                        <a href="">Cookies</a>
+                                        <a href="">Help</a>
+                                        <a href="">FQAs</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a href="" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+            <i class="bi bi-arrow-up"></i>
+        </a>
+
+         <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+
+                <!-- Modal Header -->
+                <div class="modal-header w-100">
+                    <h4 class="modal-title text-primary"> <span class="text-white">Thông tin</span> đặt bàn online</h4>
+                    <button type="button" class="btn-close btn-close-white btn-info" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="" method="post">
+                        <div class="row g-3">
+                            <div class="form-flotting text-white">
+                                <label for="">Tên khách - Guest's name <span
+                                        style="color: var(--bs-danger);">*</span> </label>
+                                <input required type="text" class="form-control" id="names"
+                                    placeholder="">
+                            </div>
+
+                            <div class="form-flotting text-white">
+                                <label for="">Số điện thoại - Contact number<span
+                                        style="color: var(--bs-danger);">*</span>
+                                </label>
+                                <input required type="text" class="form-control" id="numberPhone" placeholder="" value="">
+                            </div>
+
+                            <div class="form-flotting text-white">
+                                <label for="">Email<span style="color: var(--bs-danger);">*</span> </label>
+                                <input required type="text" class="form-control" id="email"
+                                    placeholder="thuymocvegetarian@gmail.com">
+                            </div>
+
+                            <div class="form-flotting text-white">
+                                <label for="">Số lượng khách - Number of guests<span
+                                        style="color: var(--bs-danger);">*</span> </label>
+                                <input required type="number" class="form-control" id="qualitys" placeholder="">
+                            </div>
+
+                            <div class="form-flotting text-white">
+                                <label for="">Giờ đến - Expected arrival time<span
+                                        style="color: var(--bs-danger);">*</span>
+                                </label>
+                                <input required type="time" class="form-control" id="times"
+                                    placeholder="Vui lòng đặt bàn trước 1h">
+                            </div>
+
+                            <div class="form-flotting text-white">
+                                <label for="">Ngày đặt bàn - Reserved date<span
+                                        style="color: var(--bs-danger);">*</span>
+                                </label>
+                                <input required type="date" class="form-control" id="date"
+                                    placeholder="Vui lòng đặt bàn trước 1h">
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea style="height: 100px;" name="" id="messages" cols="30" rows="10"
+                                        class="form-control" placeholder=""></textarea>
+                                    <label for="">Yêu cầu của quý khách - Special requests </label>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <button value="Đặt bàn" id="btn" class="btn btn-primary w-100 py-3 text-white" type="button" onclick="sendEmail()"  placeholder="Đặt Bàn">
+                                    ĐẶT BÀN - RESERVE
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+        <script src="./assets/lib/wow/wow.min.js"></script>
+        <script src="./assets/lib/easing/easing.min.js"></script>
+        <script src="./assets/lib/waypoints/waypoints.min.js"></script>
+        <script src="./assets/lib/counterup/counterup.min.js"></script>
+        <script src="./assets/lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
